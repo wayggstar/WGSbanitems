@@ -1,0 +1,15 @@
+name: WGSBanItem              # Plugin Name
+main: org.wayggstar.WGSbanitem.WGSBanItem   # Main class with full package path
+version: 1.0.2              # Plugin version
+api-version: 1.21             # Target Minecraft API version (1.18+ recommended)
+description: 특정 아이템 사용을 금지하는 플러그인  # Plugin description in Korean
+
+commands:
+  금지아이템:
+    description: 아이템을 금지하거나 해제하고 플러그인을 리로드합니다.
+    permission: wgsbanitem.op
+
+permissions:
+  wgsbanitem.op:
+    description: 금지된 아이템을 설정할 수 있는 권한입니다.
+    default: op
